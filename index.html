@@ -1,10 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html>
 
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>JavaScript Drama</title>
+  <title>drama.js</title>
   <style>
   body, a {
     background: black;
@@ -12,9 +11,11 @@
     font-family: monospace;
     text-align: center;
   }
-  .cry {
+  .face {
     display: inline-block;
     padding: 1%;
+  }
+  .cry {
     -webkit-transform: rotate(100deg);  /* Saf3.1+, Chrome */
        -moz-transform: rotate(100deg);  /* FF3.5+ */
         -ms-transform: rotate(100deg);  /* IE9 */
@@ -23,8 +24,6 @@
     border: 1px solid white;
   }
   .laugh {
-    display: inline-block;
-    padding: 1%;
     -webkit-transform: rotate(80deg);  /* Saf3.1+, Chrome */
        -moz-transform: rotate(80deg);  /* FF3.5+ */
         -ms-transform: rotate(80deg);  /* IE9 */
@@ -36,19 +35,24 @@
   }
   h1 {font-size: 1000%;}
   h2 {font-size: 200%;}
-  p {margin-top: 20%;}
+  p {
+    font-size: 90%;
+    margin-top: 20%;
+  }
   </style>
 </head>
 <body>  
-  <h1><span class="laugh">:-)</span><span class="cry">:`{</span></h1>
+  <h1><span class="face laugh">:-)</span><span class="face cry">:`{</span></h1>
   <h2><a href="https://github.com/twitter/bootstrap/issues/3057">"Insanely stupid" bootstrap code needs ;</a> 
     (<a href="http://news.ycombinator.com/item?id=3842713">hn</a>,
     <a href="http://brendaneich.com/2012/04/the-infernal-semicolon/">/be</a>,
     <a href="http://news.ycombinator.com/item?id=3844302">hn</a>)
   </h2>
 
-  <p><small><a href="https://github.com/stoyan/jsdrama">patches</a>,
-            <a href="https://twitter.com/javascriptdrama">@javascriptdrama</a></small></p>
+  <p><a href="https://github.com/stoyan/jsdrama">patches</a>,
+     <a href="https://twitter.com/javascriptdrama">@javascriptdrama</a>,
+     best viewed with popcorn
+     </p>
 
 </body>
 </html>
